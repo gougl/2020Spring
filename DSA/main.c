@@ -23,8 +23,8 @@ int main(){
 	person *ptr2_stru = (person *)malloc(sizeof(person));
 	ptr2_stru->sex = 1;
 	ptr2_stru->test = (int *)malloc(sizeof(int));
-	ptr2_stru->test = 20;
-	printf("%d\n",ptr2_stru->test);
+	*ptr2_stru->test = 20;
+	printf("%d\n",*ptr2_stru->test);
 
 	printf("first program!\n");
 	int a = 5, b=7;
@@ -38,21 +38,21 @@ int main(){
 	//printf("%d\n",sizeof(double));
 	// 动态生成数组
 	// 指针变量， 动态分配内存
-	int *p = (int *)malloc(sizeof(int) * 10);
+	//int *p = (int *)malloc(sizeof(int) * 10);
 
-	p = (int *)realloc(p, sizeof(int)*20);
+	//p = (int *)realloc(p, sizeof(int) * 20);
 	//静态数组，数组名，常量
-	int arr[10];
+	//int arr[10];
 	//wrong 
 	// arr = realloc()
-	printf("%d\n%d\n",p[0],p[1]);
+	//printf("%d\n%d\n",p[0],p[1]);
 
 	//动态生成二维数组
-	int TwoDarray[3][3];
-	int row =3, col = 5;
-	int **twoD = (int **)malloc(sizeof(int*) * row);
-	for(int i=0;i<row;i++)
-		twoD[i] = (int *) malloc(sizeof(int) * col);
+	// int TwoDarray[3][3];
+	// int row =3, col = 5;
+	// int **twoD = (int **)malloc(sizeof(int*) * row);
+	// for(int i=0;i<row;i++)
+	// 	twoD[i] = (int *) malloc(sizeof(int) * col);
 
 
 

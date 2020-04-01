@@ -1,4 +1,7 @@
 package OOP;
+
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+
 public class Main {
     public static void main(String[] args){
         System.out.println("this is first program");
@@ -19,5 +22,8 @@ public class Main {
         // short/byte/char
         // long(64bit) is wider range than integer
 
+
     }
+
 }
+

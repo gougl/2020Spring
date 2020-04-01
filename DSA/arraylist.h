@@ -1,6 +1,7 @@
 #ifndef ARRAYLIST_H
 #define   ARRAYLIST_H
 #include <stdio.h>
+#include <stdlib.h>
 #define Max 10
 typedef int elemtype;
 typedef struct {
@@ -10,7 +11,7 @@ typedef struct {
 }sqlist;
 
 void initial_sqlist(sqlist *sl){
-    sl->data = (elemtype *)malloc(sizeof(elemtype)*Max);
+    sl->data = (elemtype *) malloc (sizeof(elemtype) *Max );
     sl->length = 0;
     sl->CAP = Max;
 }
