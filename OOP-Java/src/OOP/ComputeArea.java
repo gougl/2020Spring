@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ComputeArea {
     public static void main(String[] args){
         double radius;
-        double area;
+        double area = 0;
         // declare the constant using 'final'
         final double PI = 3.14;
 
@@ -13,11 +13,14 @@ public class ComputeArea {
 
         radius = input.nextDouble();
 
-        area = radius * radius * PI;
+        if (radius < 0)
+            System.out.println("pls input the positivie number for radius");
+        else
+            area = radius * radius * PI;
 
-        int h = input.nextInt();
+        // int h = input.nextInt();
 
 
-        System.out.println(area + "," + h);
+        System.out.println(area);
     }
 }
