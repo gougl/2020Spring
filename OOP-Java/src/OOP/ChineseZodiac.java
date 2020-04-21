@@ -28,7 +28,20 @@ public class ChineseZodiac {
         // [ 7, 21)
         // a + (int)(Math.random()*b) ---> [a, a+b)
         int num = 7 + (int)(Math.random()*14);
+        //String.charAt(3);
+//        String s = "welcome";
+//        s.charAt(3);
+
+
         System.out.println(num);
 
+
+        Scanner input = new Scanner(System.in);
+        String s = input.nextLine();
+        System.out.println(s);
+        char ch = s.charAt(0);
+        System.out.println(ch);
+
     }
+
 }
