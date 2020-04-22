@@ -71,7 +71,7 @@ int main(){
 	// printf("find 3 is or not: %d\n ", search_sqlist(sa, 3));
 
 	arraystack a;
-	initial_sqlist(&a);
+	initial_stack(&a);
 	push(&a, 1);
 	push(&a, 2);
 	push(&a, 3);
