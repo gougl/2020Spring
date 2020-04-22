@@ -1,6 +1,5 @@
 package OOP;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 
 public class Main {
     public static void main(String[] args){
