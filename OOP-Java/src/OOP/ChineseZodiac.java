@@ -42,6 +42,9 @@ public class ChineseZodiac {
         char ch = s.charAt(0);
         System.out.println(ch);
 
+        LoopExample le = new LoopExample();
+        le.print3();
+
     }
 
 }

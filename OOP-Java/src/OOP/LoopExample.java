@@ -91,6 +91,18 @@ public class LoopExample {
 
         LoopExample instance = new LoopExample();
         instance.print();
+        instance.print2();
+        instance.max(2,3);
+        instance.max(2.0, 3);
+
+        print4();
+
+        int[] a = new int[2];
+        a[0] = 3;
+        a[1] = 5;
+        swap(a);
+        System.out.println(a[0] + "," + a[1]);
+
 
     }
 
@@ -124,4 +136,32 @@ public class LoopExample {
         System.out.println("another print method, which is also instance method");
     }
 
+    private void print2(){
+        System.out.println("this is private method");
+    }
+
+    private static void print4(){
+        System.out.println("this is the private static method");
+    }
+
+    public int max(int a, int b){
+        if(a>=b)
+            return a;
+        return b;
+    }
+    public double max(double a, double b){
+        if(a>=b)
+            return a;
+        return b;
+    }
+
+    protected void print3(){
+        System.out.println("this is protected method");
+    }
+
+    public static void swap(int[] a){
+        int temp = a[0];
+        a[0] = a[1];
+        a[1] = temp;
+    }
 }
