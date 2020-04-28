@@ -1,6 +1,8 @@
 package OOP;
 
 
+import java.util.Scanner;
+
 public class TestMethod {
     public static void main(String[] args){
         // static method: classname.methodname(arguments)
@@ -46,5 +48,13 @@ public class TestMethod {
 //            }
 //            System.out.println();
 //        }
+
+
+        for(int i = 0; i<= 3; i++) {
+            System.out.println("Hello");
+        }
+        for(int i = 1; i<4; i++)
+            System.out.println("World");
+
     }
 }
