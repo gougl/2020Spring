@@ -24,4 +24,7 @@ elemtype outqueue(arrayqueue *q){
     return q->data[q->front++];
 }
 
+void print(){
+    ;
+}
 #endif
